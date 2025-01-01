@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Donation - Shri Mauli Krupa Orphanage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #fff;
+            padding: 20px 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: maroon;
+        }
+
+        header h2 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        header img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: white;
+            max-width: 900px; /* Reduce navbar width */
+            margin: 0 auto; /* Center the navbar */
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: background 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        /* Responsive Navbar */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                padding: 15px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-links li {
+                margin: 5px 0;
+            }
+        }
+
+        /* Donation Section */
+        .donation-section {
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .donation-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: maroon;
+            text-align: center;
+        }
+
+        .donation-section ul {
+            list-style-type: disc;
+            margin: 20px 0;
+            padding-left: 40px;
+        }
+
+        .donation-section ul li {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .donation-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            margin: 20px 0;
+        }
+
+        /* QR Code Section */
+        .qr-code-section {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .qr-code-section img {
+            width: 200px;
+            height: 200px;
+            margin: 10px 0;
+        }
+
+        .qr-code-section p {
+            font-size: 16px;
+            color: #d9534f; /* Warning Red */
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact-section p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .contact-section strong {
+            color: maroon;
+        }
+
+        .contact-item {
+            margin: 10px 0;
+        }
+
+        .contact-item a {
+            text-decoration: none;
+            color: #007BFF; /* Link Blue */
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="pages\logo.jpg" alt="Shri Mauli Krupa Logo">
+        <h1>Shri Mauli Krupa Dnyandan Annadan Sanstha</h1>
+        <h2>Online Donation</h2>
+    </header>
+    <!-- Navbar -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.HTML">Home</a></li>
+            <li><a href="pages/our-aim-mission.html">Our Aim & Mission</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/online-donation.html">Online Donation</a></li>
+            <li><a href="pages/Gallary.html">Gallery</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Donation Section -->
+    <div class="donation-section">
+        <h2>Ways You Can Donate</h2>
+        <p>You can donate in the following ways:</p>
+        <ul>
+            <li>Cash / Check</li>
+            <li>In Kind</li>
+            <li>Stationery</li>
+            <li>Educational Support</li>
+            <li>Grocery</li>
+            <li>Clothes</li>
+            <li>Snacks / Dinner / Lunch</li>
+            <li>Toiletry Materials</li>
+        </ul>
+        <p>Choose the donation method suitable for you. You can donate according to your budget, and every contribution makes a difference!</p>
+    </div>
+
+    <!-- QR Code Section -->
+    <div class="qr-code-section">
+        <p>Scan the QR Code to Donate</p>
+        <img src="pages\QR.jpg" alt="QR Code for Donation">
+        <p>⚠ Please call before making a payment!</p>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <p><strong>Contact Information:</strong></p>
+        <div class="contact-item">
+            <strong>President:</strong> 
+            <a href="tel:+919922911010">+91 9922911010</a> - Mrs. Prachi Amol Deshmukh
+        </div>
+        <div class="contact-item">
+            <strong>Secretary:</strong> 
+            <a href="tel:+918668672643">+91 8668672643</a> - Mrs. Anuradha Amit Deshmukh
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2024 Shri Mauli Krupa Dnyandan Annadan Sanstha. All rights reserved.
+    </footer>
+</body>
+</html>
