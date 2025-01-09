@@ -26,147 +26,62 @@
         background: #202731;
         overflow-x: hidden;
       }
-     /* Navbar Styling */
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: linear-gradient(135deg, black, gray);
-    padding: 15px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
+  /* Navbar */
+        nav {
+            background-color: white;
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-nav:hover {
-    transform: translateY(-2px);
-}
+        .nav-links {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-.nav-links {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    gap: 10px;
-}
+        .nav-links li {
+            margin: 0 10px;
+        }
 
-.nav-links li {
-    flex: 1; /* Makes all items equal width */
-    text-align: center; /* Centers the text within each item */
-}
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: background 0.3s ease;
+        }
 
-.nav-links a {
-    display: block;
-    font-size: 1rem;
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-family: "Poppins", sans-serif;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
-}
+        .nav-links a:hover {
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
 
-.nav-links a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    color: #333;
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
-}
+        /* Responsive Navbar */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                padding: 15px;
+            }
 
-/* Responsive Styling */
-@media (max-width: 768px) {
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
 
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
+            .nav-links li {
+                margin: 5px 0;
+            }
+        }
 
-    .nav-links li {
-        width: 100%; /* Full width for smaller screens */
-    }
-
-    .nav-links a {
-        width: 100%; /* Full width for smaller screens */
-        text-align: center;
-    }
-}
-nav {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background: linear-gradient(135deg, black, gray);
-    padding: 15px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-nav:hover {
-    transform: translateY(-2px);
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    gap: 10px;
-}
-
-.nav-links li {
-    flex: 1; /* Makes all items equal width */
-    text-align: center; /* Centers the text within each item */
-}
-
-.nav-links a {
-    display: block;
-    font-size: 1rem;
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-family: "Poppins", sans-serif;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
-}
-
-.nav-links a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    color: #333;
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
-}
-
-/* Responsive Styling */
-@media (max-width: 768px) {
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .nav-links li {
-        width: 100%; /* Full width for smaller screens */
-    }
-
-    .nav-links a {
-        width: 100%; /* Full width for smaller screens */
-        text-align: center;
-    }
-}
         /* Header Section */
         header {
             background-color: #fff;
