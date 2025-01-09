@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shri Mauli Krupa Dnyandan Annadan Sanstha - A shelter for orphaned children offering support, education, and a better future. Join us in making a difference.">
+    <title>Orphanage Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <style>
+        h1 {
+        font-size: 4rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+      body {
+        margin: 0;
+        font-family: 'Prompt', sans-serif;
+        color: white;
+        background: #ffffff;
+        overflow-x: hidden;
+      }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 5px 20px;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-bar .contact-info span {
+            margin-right: 10px;
+        }
+
+        .top-bar .social-links a {
+            color: #333;
+            text-decoration: none;
+            margin-right: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .top-bar .social-links a:hover {
+            color: maroon;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #fff;
+            padding: 15px 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header .logo img {
+            width: 90px;
+            height: auto;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin: 10px 0;
+            color: maroon;
+        }
+
+        header h2 {
+            font-size: 18px;
+            margin: 5px 0;
+            color: #666;
+        }
+
+        header h3 {
+            font-size: 14px;
+            margin: 5px 0;
+            font-style: italic;
+            color: #333;
+        }
+
+      /* Navbar Styling */
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(135deg, black, gray);
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav:hover {
+    transform: translateY(-2px);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.nav-links li {
+    flex: 1; /* Makes all items equal width */
+    text-align: center; /* Centers the text within each item */
+}
+
+.nav-links a {
+    display: block;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #333;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links li {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .nav-links a {
+        width: 100%; /* Full width for smaller screens */
+        text-align: center;
+    }
+}
+
+        /* Banner Section */
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            background: url('hi.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        .banner::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .banner-text {
+            position: absolute;
+            z-index: 2;
+            color: white;
+            text-align: center;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .banner-text h1 {
+            font-size: 36px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .banner-text p {
+            font-size: 18px;
+            margin: 10px 0 0;
+        }
+
+        .donation-btn {
+            display: inline-block;
+            background-color: orange;
+            color: white;
+            padding: 15px 30px;
+            margin-top: 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+
+        .donation-btn:hover {
+            background-color: darkorange;
+        }
+
+        /* Trust Body Section */
+        .trust-body {
+            background-color: #f9f9f9;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .trust-body h2 {
+            color: maroon;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .trust-body .member {
+            max-width: 300px;
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+
+        .trust-body img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .trust-body h3 {
+            color: #000080;
+            margin-top: 15px;
+        }
+
+        .trust-body p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .trust-body .members-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+       
+        .content {
+            padding-top: 70px;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="top-bar">
+        <div class="contact-info">
+            <span>Regi.ID MH-E / 2665 / 1998 - PUNE</span>
+        </div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/shri_mauli_krupa_orphanage?igsh=MWVoanRldmFlZGc2Nw==">Instagram</a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+    </div>
+
+    
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Orphanage Logo">
+        </div>
+        <h1>Shri Mauli Krupa Dnyandan Annadan Sanstha Sanchalit</h1>
+        <h2>निराधार निराश्रीत बालकाश्रम</h2>
+        <h3>"A shelter for every orphan child"</h3>
+    </header>
+
+   
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="our-aim-mission.html">Our Aim & Mission</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="online-donation.html">Online Donation</a></li>
+            <li><a href="Gallary.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    
+    <div class="banner">
+        <div class="banner-text">
+            <h1>Lend the Helping Hand</h1>
+            <p>We are here to support you every step of the way.</p>
+            <a href="online-donation.html" class="donation-btn">Donate Now</a>
+        </div>
+    </div>
+
+    
+    <section class="trust-body">
+        <h2>Our Trust Body</h2>
+        <div class="members-container">
+
+           
+            <div class="member">
+                <img src="prachi.png" alt="Mrs. Prachi Amol Deshmukh">
+                <h3>Mrs. Prachi Amol Deshmukh</h3>
+                <p>President</p>
+                <p>Currently a Social worker and pursuing degree in D.Ed, BA.
+                   Working as children counciller
+                </p>
+            </div>
+
+           
+            <div class="member">
+                <img src="amol.png" alt="Mr.Amol Kakasaheb Deshmukh">
+                <h3>Mr.Amol Kakasaheb Deshmukh</h3>
+                <p>Vice -President</p>
+                <p>
+                    Completed MBA in Human Resource Management & Marketing Management  & Currently a State Govt. Official having experience of more than 12 years in his service as Village Rvenue Officer in Reveneu Department in State of Maharshtra. 
+
+
+                </p>
+            </div>
+
+           
+            <div class="member">
+                <img src="anuradha.png" alt="Mrs.Anuradha Amit Deshmukh">
+                <h3>Mrs.Anuradha Amit Deshmukh</h3>
+                <p>Secretary</p>
+                <p>Completed MSW (Master of Social Worker) .Before she started work with orphan children. She worked in Dnyandeep Balgruha Dighi Pune as an Assistant - Superintendent for 08 years & as a Superintendent from 2018 till the date
+
+
+
+                </p>
+            </div>
+
+            
+            <div class="member">
+                <img src="amit.png" alt="Mr.Amit Kakasaheb Deshmukh">
+                <h3>Mr.Amit Kakasaheb Deshmukh</h3>
+                <p> Treasurer</p>
+                <p>Completed MSW (Master of Social Worker) . Before he started work with orphan children. He worked in a for Dnyandeep Balgruha Dighi Pune as a Superintndent 08 years.  In 2018 he became a member of the Child Welfare Committee in Pune for 03 years. Also he worked as a Railway ChildLine as a Project Coordinator for 2 years. Also  worked in Child Welfare and Action Foundation WAIC as Senior Project Associate from Feb 2023 to till the date..
+
+                </p>
+            </div>
+
+            
+            <div class="member">
+                <img src="aditya.png" alt="Mr.Aditya Balasaheb Lohar">
+                <h3>Mr.Aditya Balasaheb Lohar</h3>
+                <p>Member</p>
+                <p>A Graduate in Bachelor of Engineering (Civil) and currently a State Government Official, having experience of more than 6 years in his service as, Assistant Town Planner, in Town Planning and Valuation Department, Maharashtra State.</p>
+            </div>
+
+             
+              <div class="member">
+                <img src="anvi.png" alt="Mrs. Avani Aditya Loha">
+                <h3>Mrs. Avani Aditya Lohar</h3>
+                <p>Member</p>
+                <p>Currently a Social worker and pursuing degree in Interior Designer. Enthusiastic in social services.</p>
+            </div>
+        </div>
+    </section>
+
+   
+   
+</body>
+</html>
